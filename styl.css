@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Styling form and resume sections */
+
+body {
+    margin: 20px;
+    padding: 0;
+    background-color:black;
+		font-family: "Poppins", sans-serif;
+}
+
+form {
+    margin: auto;
+    background-color: rgb(202, 198, 198);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 600px;
+		box-shadow: 4px 4px 15px rgb(243, 237, 237);
+}
+
+h1 {
+    text-align: center;
+    color:#fff;
+		font-weight: 600;
+		transition: 1s;
+}
+h1:hover{
+	color: #e9d758;
+}
+
+fieldset {
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color:rgb(243, 237, 237);
+}
+
+legend {
+    font-weight: 800;
+    text-align: left;
+    color: rgb(34, 29, 29);
+		letter-spacing: 1px;;
+		font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+}
+
+input,textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: calc(100% - 1px);
+    border: 1px solid #e9d758;;
+    border-radius: 4px;
+    box-sizing: border-box;
+		background-color: rgb(226, 242, 247);
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #e9d758;
+    color:black;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+		letter-spacing: 1px;
+		transition: 1s;
+}
+button:hover{
+	color: #fff;
+	background-color: gray;
+}
+
+#resume-display {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    background-color:rgb(202, 198, 198);
+    box-shadow: 4px 4px 15px rgb(243, 237, 237);;
+		outline: none;
+}
+
+#resume-display h2 {
+    color: black;
+}
+#share-link-heading{
+	text-align: center;
+	font-size: 20px;
+	font-weight:600;
+	color: #fff;
+	letter-spacing: 1px;
+	line-height:0px;
+	transform: 1s;
+	cursor: pointer;
+}
+#share-link-heading:hover{
+	color: #e9d758;
+}
+#resume-description{
+	text-align: center;
+	font-size: 20px;
+	font-weight:600;
+	color: #fff;
+	letter-spacing: 1px;
+	line-height:0px;
+	transform: 1s;
+	cursor: pointer;
+}
+#resume-description:hover{
+	color:#e9d758;
+}
+#shareable-link{
+	text-decoration: none;
+	color: #e9d758;
+}
+.profile_picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image round */
+}
+
+@media (max-width: 600px) {
+      #share-link-heading{
+				margin: auto;
+				padding: 19px;
+			}}

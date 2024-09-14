@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resume Builder</title>
+	<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+	<div>
+	<h1> Resume Builder</h1>
+	<form id="resume-form">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<!-- Url Resume -->
+			<label for="Profile-Picture">Profile Picture</label>
+     <input type="file" id="Profile-Picture" accept="image/*" required>
+			<label for="username">User Name URL :</label>
+			<input type="text" name="username" id="username" required placeholder="Enter Your User Name"><br>
+			<label for="Name">Name :</label>
+			<input type="text" name="Name" id="Name" placeholder="Enter Your Name" required>
+			<label for="Email Address">Email Address </label>
+			<input type="email" name="Email Address" id="Email Address" placeholder="eg.john@gmail.com" required>
+			<label for="Phone Number">Phone Number :</label>
+			<input type="tel" name="Phone Number" id="Phone Number"placeholder="0213-9874-987" required>
+		</fieldset>
+		<fieldset>
+			<legend>Education</legend>
+		 <label for="Institude Name">Institude Name :</label>
+		 <input type="text" name="Institude Name" id="Institude Name" placeholder="Institude Name" required>
+		 <label for="Degree">Degree :</label>
+		 <input type="text" name="Degree" id="Degree" placeholder=" eg.B.Sc ,B.com" required>
+		 <label for="Years Of Education">Years Of Education :</label>
+		 <input type="text" name="Years Of Education" id="Years Of Education" placeholder=" eg.5 Years" required>
+		 <label for="text-area">Education Details :</label>
+		 <textarea name="text-area" id="education-text-area" placeholder="Enter Your Education Details" rows="5" required></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Work Experience</legend>
+		<label for="Campany Name">Campany Name :</label>
+		 <input type="text" name="Campany Name" id="Campany Name" placeholder="eg.abc Campany" required>
+		 <label for="Your Last job">Your Last job:</label>
+		 <input type="text" name="Your Last job" id="Your Last job" placeholder="eg.Technologies" required>
+		 <label for="Job Description">Job Description :</label>
+		 <textarea name="Job Description" id="Job Description" rows="4" placeholder="Write About Your Job Description" required></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Skills</legend>
+			<label for="Skills">Add Your Skills :</label>
+			<textarea name="Skills" id="Skills" rows="4" placeholder="Add Your Skills"></textarea>
+		</fieldset>
+		<button type="submit"><b>Generate Resume</b></button>
+	</form>
+	<br>
+	<div id="resume-display" contenteditable="true">
+	</div>
+
+	<br>
+	<!-- URL resume Link / Download button -->
+	 <div id="shareable-link-container" style.diplay="none;">
+		<h2 id="share-link-heading">Created By Sadia Khan</h2>
+		<p id="resume-description">Here Your Resume URl</p>
+		<a href="#" id="shareable-link" target="_blank"></a>
+		<button id="download-pdf"><strong>Download as PDF</strong></button>
+	 </div>
+	<script src="script.js"></script>
+</body>
+</html>
